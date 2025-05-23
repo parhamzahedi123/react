@@ -1,14 +1,22 @@
 import './Product.css';
-export default function Product(props){
-   return(
-        <>
-        <div className="product-box">
-        <img src={props.image} alt="محصول ۱"/>
-        <h3>{props.title}</h3>
-        <p>{props.detail}</p>
-        <div className="price">{props.price}</div>
-        <button>افزودن به سبد خرید</button>
-        </div>
-        </>
+function Product (props){
+    return(
+<>
+<div className="product-box">
+    <img src={props.image}  alt="this is test" className="product-box img"/>
+<h1> {props.title}  </h1>
+<p className="product-price">{props.price} </p>
+<button className="product-button">افزودن به سبد خرید</button>
+
+
+</div>
+</>
+
+
     )
+        
 }
+
+export default Product;
+
+//parham zahedi and sahand bakhshayesh
